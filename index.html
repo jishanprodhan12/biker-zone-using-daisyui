@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +15,7 @@
           colors: {
             clifford: '#da373d',
             'bike-primary': '#E76F51',
+            'text-primary': '#E0E0E0',
           }
         }
       }
@@ -23,50 +24,154 @@
 </head>
 <body>
     <!-- header  -->
-   <header class="container mx-auto">
-    <!-- nav bar -->
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="flex-1">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
+     <div id="header-wrapper" class="bg-[#264653]">
+      <header class="container mx-auto ">
+        <!-- nav bar -->
+            <nav>
+                <div class="navbar bg-[#264653]">
+                    <div class="flex-1">
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 text-white"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16" />
+                          </svg>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+                          <li><a>Home</a></li>
+                          <li><a>Shop</a></li>
+                          <li><a>News</a></li>
+                          <li><a>Contact</a></li>
+                        </ul>
+                      </div>
+                      <a class="btn btn-ghost text-xl text-white">Go Ride</a>
                     </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Home</a></li>
-                      <li><a>Shop</a></li>
-                      <li><a>News</a></li>
-                      <li><a>Contact</a></li>
-                    </ul>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1 text-white">
+                          <li><a>Home</a></li>
+                          <li><a>Shop</a></li>
+                          <li><a>News</a></li>
+                          <li><a>Contact</a></li>
+                    </div>
+                    <div class="">
+                      <a class="btn btn-primary border-none bg-bike-primary text-white">Login</a>
+                    </div>
                   </div>
-                  <a class="btn btn-ghost text-xl">Go Ride</a>
+            </nav>
+            <!-- banner carosel  -->
+             <section class="lg:h-[500px]">
+                <div class="carousel w-full lg:h-[450px] lg:mt-11">
+                  <!-- slider 1 -->
+                    <div id="slide1" class="carousel-item relative w-full">
+                      <div class="flex flex-col lg:flex-row px-4 lg:px-7">
+                        <!-- text  -->
+                         <div class="space-y-3 md:space-y-4  ">
+                          <h4 class="text-sm text-text-primary">Computer-controlled digital transistorized with electronic advance</h4>
+                          <br>
+                          <h1 class="font-bold text-3xl  lg:text-4xl text-white">Keep Your Ride Safe <br>  At Every Time</h1>
+                          <br>
+                          <p class="text-sm text-text-primary md:w-1/3 lg:w-1/2 ">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                          <br>
+                          <br class="hidden lg:block">
+                          <button class="btn btn-primary bg-bike-primary border-none text-white">Purchase</button>
+                         </div>
+                         <!-- image  -->
+                          <div>
+                        <img src="./images/slider/bike1.png" alt="CrouserBike">
+                          </div>
+                      </div>
+                      <div class="absolute left-5 right-5 top-1/2 lg:top-3/4 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" class="btn btn-circle relative top-12">❮</a>
+                        <a href="#slide2" class="btn btn-circle relative top-12">❯</a>
+                      </div>
+                    </div>
+                    <!-- slider 2 -->
+                    <div id="slide2" class="carousel-item relative w-full">
+                      <div class="flex flex-col lg:flex-row px-4 lg:px-7">
+                        <!-- text  -->
+                         <div class="space-y-3 md:space-y-4  ">
+                          <h4 class="text-sm text-text-primary">Computer-controlled digital transistorized with electronic advance</h4>
+                          <br>
+                          <h1 class="font-bold text-3xl  lg:text-4xl text-white">Keep Your Ride Safe <br> At Every Time</h1>
+                          <br>
+                          <p class="text-sm text-text-primary md:w-1/3 lg:w-1/2 ">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                          <br>
+                          <br class="hidden lg:block">
+                          <button class="btn btn-primary bg-bike-primary border-none text-white">Purchase</button>
+                         </div>
+                         <!-- image  -->
+                          <div>
+                        <img src="./images/slider/bike2.png" alt="CrouserBike">
+                          </div>
+                      </div>
+                      <div class="absolute left-5 right-5 top-1/2 lg:top-3/4 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle relative top-12">❮</a>
+                        <a href="#slide3" class="btn btn-circle relative top-12">❯</a>
+                      </div>
+                    </div>
+                    <!-- slider 3 -->
+                    <div id="slide3" class="carousel-item relative w-full">
+                      <div class="flex flex-col lg:flex-row px-4 lg:px-7">
+                        <!-- text  -->
+                         <div class="space-y-3 md:space-y-4  ">
+                          <h4 class="text-sm text-text-primary">Computer-controlled digital transistorized with electronic advance</h4>
+                          <br>
+                          <h1 class="font-bold text-3xl  lg:text-4xl text-white">Keep Your Ride Safe <br> At Every Time</h1>
+                          <br>
+                          <p class="text-sm text-text-primary md:w-1/3 lg:w-1/2 ">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                          <br>
+                          <br class="hidden lg:block">
+                          <button class="btn btn-primary bg-bike-primary border-none text-white">Purchase</button>
+                         </div>
+                         <!-- image  -->
+                          <div>
+                        <img src="./images/slider/bike3.png" alt="CrouserBike">
+                          </div>
+                      </div>
+                      <div class="absolute left-5 right-5 top-1/2 lg:top-3/4 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle relative top-12">❮</a>
+                        <a href="#slide4" class="btn btn-circle relative top-12">❯</a>
+                      </div>
+                    </div>
+                    <!-- slider 4 -->
+                    <div id="slide4" class="carousel-item relative w-full">
+                      <div class="flex flex-col lg:flex-row px-4 lg:px-7">
+                        <!-- text  -->
+                         <div class="space-y-3 md:space-y-4  ">
+                          <h4 class="text-sm text-text-primary">Computer-controlled digital transistorized with electronic advance</h4>
+                          <br>
+                          <h1 class="font-bold text-3xl  lg:text-4xl text-white">Keep Your Ride Safe <br> At Every Time</h1>
+                          <br>
+                          <p class="text-sm text-text-primary md:w-1/3 lg:w-1/2 ">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                          <br>
+                          <br class="hidden lg:block">
+                          <button class="btn btn-primary bg-bike-primary border-none text-white">Purchase</button>
+                         </div>
+                         <!-- image  -->
+                          <div>
+                        <img src="./images/slider/bike4.png" alt="CrouserBike">
+                          </div>
+                      </div>
+                      <div class="absolute left-5 right-5 top-1/2 lg:top-3/4 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle relative top-12">❮</a>
+                        <a href="#slide1" class="btn btn-circle relative top-12">❯</a>
+                      </div>
+                    </div>
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                      <li><a>Home</a></li>
-                      <li><a>Shop</a></li>
-                      <li><a>News</a></li>
-                      <li><a>Contact</a></li>
-                </div>
-                <div class="">
-                  <a class="btn btn-primary border-none bg-bike-primary text-white">Login</a>
-                </div>
-              </div>
-        </nav>
-   </header>
+             </section> 
+       </header>
+     </div>
+   
    <main>
    </main>
    <footer>
